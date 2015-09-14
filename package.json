@@ -1,0 +1,33 @@
+{
+  "name": "minecraft-wrap",
+  "version": "0.0.0",
+  "description": "Download and wrap the vanilla minecraft server in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "downloadMinecraft":"node examples/exampleDownload.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rom1504/node-minecraft-wrap.git"
+  },
+  "keywords": [
+    "minecraft",
+    "download",
+    "wrap",
+    "node"
+  ],
+  "author": "Romain Beaumont <romain.rom1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rom1504/node-minecraft-wrap/issues"
+  },
+  "dependencies": {
+    "batch": "~0.3.1",
+    "mkdirp": "~0.3.4",
+    "rimraf": "~2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "~2.2.1"
+  }
+}

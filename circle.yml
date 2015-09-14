@@ -1,0 +1,11 @@
+machine:
+  environment:
+    MC_SERVER_JAR: /home/ubuntu/node-minecraft-protocol/minecraft-server/minecraft_server.jar
+  node:
+    version: 0.10.28
+  java:
+    version: openjdk7
+dependencies:
+  pre:
+    - mkdir minecraft-server
+    - npm run downloadMinecraft 1.8.3 $MC_SERVER_JAR
