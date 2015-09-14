@@ -39,6 +39,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.2.0
+
+* add downloadMinecraft to bin
+
 ### 0.1.0
 
 * download and wrap functionality (mostly imported from mineflayer and node-minecraft-protocol)
