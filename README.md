@@ -8,6 +8,9 @@ Download and wrap the vanilla minecraft server in node.js
 
 ## Usage
 
+minecraft wrap exposes a binary you can use with node_modules/.bin/downloadMinecraft or just downloadMinecraft if you 
+install minecraft wrap globally.
+
 See [exampleDownload.js](examples/exampleDownload.js) and [exampleWrap.js](examples/exampleWrap.js)
 
 ### download(minecraftVersion,filename,done)

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var wrap=require("../");
 var path = require('path');
 if(process.argv.length > 4) {
