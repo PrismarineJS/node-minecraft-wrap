@@ -47,6 +47,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.4.0
+
+* add wrap.writeServer(line)
+
 ### 0.3.0
 
 * separate stopping the server and deleting its files
