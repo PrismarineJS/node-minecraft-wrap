@@ -47,6 +47,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.5.3
+
+* fix writeServer
+
 ### 0.5.2
 
 * don't stop the server if there's nothing to stop
