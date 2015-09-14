@@ -27,7 +27,16 @@ describe("server_session", function() {
             return;
           }
           console.log("Server Stopped !");
-          done();
+
+          vServer.deleteServerData(function(err){
+            if(err) {
+              console.log(err);
+              done(err);
+              return;
+            }
+            console.log("Server data deleted !");
+            done();
+          });
         });
       },3000);
     });

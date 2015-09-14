@@ -29,6 +29,10 @@ start the minecraft server with properties overrides `propOverrides`. Calls `don
 
 stop the minecraft server, calls `done` when the server is stopped.
 
+#### Wrap.deleteServerData(done)
+
+delete the minecraft server data.
+
 #### "line" (line)
 
 the Wrap instance emit that event when the server write a line

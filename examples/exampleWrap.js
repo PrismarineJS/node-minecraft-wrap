@@ -20,6 +20,14 @@ vServer.startServer({
         return;
       }
       console.log("Server Stopped !");
+
+      vServer.deleteServerData(function(err){
+        if(err) {
+          console.log(err);
+          return;
+        }
+        console.log("Server data deleted !");
+      });
     });
   },3000);
 });
