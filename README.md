@@ -33,6 +33,10 @@ stop the minecraft server, calls `done` when the server is stopped.
 
 delete the minecraft server data.
 
+#### Wrap.writeServer(line)
+
+write `line` to the server.
+
 #### "line" (line)
 
 the Wrap instance emit that event when the server write a line
