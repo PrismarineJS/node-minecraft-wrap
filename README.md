@@ -47,6 +47,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.5.1
+
+* some cleanup of wrap
+
 ### 0.5.0
 
 * change default properties to something more default
