@@ -14,6 +14,10 @@ vServer.startServer({
   console.log("Server Started !");
 
   setTimeout(function(){
+    vServer.on('line',function(line){
+      console.log(line);
+    });
+
     vServer.stopServer(function(err){
       if(err) {
         console.log(err);
