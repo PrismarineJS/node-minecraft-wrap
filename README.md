@@ -47,6 +47,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.5.4
+
+* create empty banned-players.json, banned-ips.json, ops.json, whitelist.json to avoid errors
+
 ### 0.5.3
 
 * fix writeServer
