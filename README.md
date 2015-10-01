@@ -17,6 +17,9 @@ See [exampleDownload.js](examples/exampleDownload.js) and [exampleWrap.js](examp
 
 download the vanilla server of version `minecraftVersion` jar file at `filename`.
 
+It checks with a md5 hash that the file downloaded is correct and it
+ doesn't download it if the destination file is already the correct file.
+
 ### new Wrap(MC_SERVER_JAR,MC_SERVER_PATH)
 
 initialize a wrapper with jar `MC_SERVER_JAR`, store mc server file at `MC_SERVER_PATH`
@@ -46,6 +49,10 @@ the Wrap instance emit that event when the server write a line
 The MC_SERVER_JAR environment variable must be defined and point the .jar location before calling npm test.
 
 ## History
+
+### 0.6.0
+
+* check with a md5 hash that the file downloaded is correct, doesn't download it if the destination file is already the correct file
 
 ### 0.5.4
 
