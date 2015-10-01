@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "batch": "~0.3.1",
+    "md5-file": "^2.0.3",
     "mkdirp": "~0.3.4",
     "rimraf": "~2.1.1"
   },
@@ -31,6 +32,6 @@
     "mocha": "~2.2.1"
   },
   "bin": {
-   "downloadMinecraft": "./examples/exampleDownload.js"
+    "downloadMinecraft": "./examples/exampleDownload.js"
   }
 }
