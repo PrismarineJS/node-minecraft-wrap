@@ -4,7 +4,7 @@
   "description": "Download and wrap the vanilla minecraft server in node.js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec",
+    "test": "standard && mocha --reporter spec",
     "downloadMinecraft": "./examples/exampleDownload.js"
   },
   "repository": {
@@ -29,7 +29,8 @@
     "rimraf": "~2.1.1"
   },
   "devDependencies": {
-    "mocha": "~2.2.1"
+    "mocha": "~2.2.1",
+    "standard": "^5.3.1"
   },
   "bin": {
     "downloadMinecraft": "./examples/exampleDownload.js"
