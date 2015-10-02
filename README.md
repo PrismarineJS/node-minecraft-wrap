@@ -50,6 +50,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.6.1
+
+* check the created path is actually created in wrap.js
+
 ### 0.6.0
 
 * check with a md5 hash that the file downloaded is correct, doesn't download it if the destination file is already the correct file
