@@ -50,6 +50,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.6.4
+
+* batch.concurrency(1) fixes the bug
+
 ### 0.6.3
 
 * use fs.mkdir instead of mkdirp, should fix the bug
