@@ -50,6 +50,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.6.2
+
+* fix the dir existence checking
+
 ### 0.6.1
 
 * check the created path is actually created in wrap.js
