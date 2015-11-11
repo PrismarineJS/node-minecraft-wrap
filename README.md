@@ -56,6 +56,10 @@ The MC_SERVER_JAR environment variable must be defined and point the .jar locati
 
 ## History
 
+### 0.7.0
+
+* add OPTIONS parameter to specify the ram usage and the done string to check for spigot support
+
 ### 0.6.5
 
 * go back to using mkdirp, which doesn't have any problem after all
