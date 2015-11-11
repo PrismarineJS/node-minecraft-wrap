@@ -20,9 +20,15 @@ download the vanilla server of version `minecraftVersion` jar file at `filename`
 It checks with a md5 hash that the file downloaded is correct and it
  doesn't download it if the destination file is already the correct file.
 
-### new Wrap(MC_SERVER_JAR,MC_SERVER_PATH)
+### new Wrap(MC_SERVER_JAR,MC_SERVER_PATH[,OPTIONS])
 
 initialize a wrapper with jar `MC_SERVER_JAR`, store mc server file at `MC_SERVER_PATH`
+
+`OPTIONS` is an object containing the following optional properties:
+
+* minMem : the minimum memory allocated to the minecraft server, default to 512
+* maxMem : the maximum memory allocated to the minecraft server, default to 512
+* doneRegex : the regex to check for the server message announcing the server has started, default to `new RegExp(/\[Server thread\/INFO\]: Done/)`
 
 #### Wrap.startServer(propOverrides, done)
 
