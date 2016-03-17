@@ -2,15 +2,15 @@
 
 var wrap=require("../");
 var path = require('path');
-if(process.argv.length > 4) {
-  console.log("Usage : node exampleDownload.js [<version>] [<path>]");
-  process.exit(1);
+if(process.argv.length !=4) {
+  console.log("Usage : node exampleDownload.js <version> <jar_file>");
+  process.exit(0);
 }
 
-var version=process.argv[2] || '1.8.3';
-var jar=process.argv[3] || path.join(__dirname, 'minecraft_server.1.8.3.jar');
+var version=process.argv[2];
+var jarFile=path.isAbsolute(process.argv[3]) ? process.argv[3] : path.join(process.cwd(), process.argv[3]);
 
-wrap.download(version,jar,function(err){
+wrap.download(version,jarFile,function(err){
   if(err) {
     console.log(err);
     process.exit(1);

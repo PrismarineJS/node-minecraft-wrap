@@ -1,7 +1,19 @@
 var wrap=require("../");
 var path = require('path');
 
-var vServer=new wrap.Wrap(path.join(__dirname, 'minecraft_server.1.8.3.jar'),path.join(__dirname, 'server'));
+if(process.argv.length !=4) {
+  console.log("Usage : node exampleWrap.js <jar_file> <server_dir>");
+  process.exit(0);
+}
+
+var jarFile=path.isAbsolute(process.argv[2]) ? process.argv[2] :path.join(process.cwd(), process.argv[2]);
+var serverDir=path.isAbsolute(process.argv[3]) ? process.argv[3] : path.join(process.cwd(), process.argv[3]);
+
+var vServer=new wrap.Wrap(jarFile,serverDir);
+
+vServer.on('line',function(line){
+  console.log(line);
+});
 
 vServer.startServer({
   motd: 'test1234',
@@ -14,9 +26,6 @@ vServer.startServer({
   console.log("Server Started !");
 
   setTimeout(function(){
-    vServer.on('line',function(line){
-      console.log(line);
-    });
 
     vServer.stopServer(function(err){
       if(err) {
