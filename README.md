@@ -1,15 +1,24 @@
 # minecraft wrap
 
 [![NPM version](https://img.shields.io/npm/v/minecraft-wrap.svg)](http://npmjs.com/package/minecraft-wrap)
-[![Build Status](https://img.shields.io/circleci/project/rom1504/node-minecraft-wrap/master.svg)]
-(https://circleci.com/gh/rom1504/node-minecraft-wrap)
+[![Build Status](https://img.shields.io/circleci/project/rom1504/node-minecraft-wrap/master.svg)](https://circleci.com/gh/rom1504/node-minecraft-wrap)
 
-Download and wrap the vanilla minecraft server in node.js
+Download and wrap the vanilla minecraft server in node.js. Also download the minecraft client.
+
+## Install
+
+To install a downloadMinecraft command line program, run:
+
+```
+npm install -g minecraft-wrap
+```
+
 
 ## Usage
 
-minecraft wrap exposes a binary you can use with node_modules/.bin/downloadMinecraft or just downloadMinecraft if you 
-install minecraft wrap globally.
+```
+downloadMinecraft 1.8.8 1.8.8.jar server
+```
 
 See [exampleDownload.js](examples/exampleDownload.js) and [exampleWrap.js](examples/exampleWrap.js)
 
@@ -19,6 +28,10 @@ download the vanilla server of version `minecraftVersion` jar file at `filename`
 
 It checks with a md5 hash that the file downloaded is correct and it
  doesn't download it if the destination file is already the correct file.
+ 
+### downloadClient(minecraftVersion,filename,done)
+ 
+download the vanilla client of version `minecraftVersion` jar file at `filename`.
 
 ### new Wrap(MC_SERVER_JAR,MC_SERVER_PATH[,OPTIONS])
 
