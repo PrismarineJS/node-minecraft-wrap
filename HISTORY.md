@@ -1,5 +1,10 @@
 # History
 
+## 1.0.0
+
+* improve the cli interface
+* can now download the client
+
 ## 0.7.1
 
 * improve default done regex to support both spigot and vanilla

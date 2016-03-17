@@ -1,6 +1,6 @@
 {
   "name": "minecraft-wrap",
-  "version": "0.7.1",
+  "version": "1.0.0",
   "description": "Download and wrap the vanilla minecraft server in node.js",
   "main": "index.js",
   "scripts": {
