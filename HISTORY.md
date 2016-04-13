@@ -1,5 +1,9 @@
 # History
 
+## 1.0.1
+
+* use 'close' instead of 'exit' event for quitServer : might cause less problems
+
 ## 1.0.0
 
 * improve the cli interface
