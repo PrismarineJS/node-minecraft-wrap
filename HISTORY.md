@@ -1,5 +1,9 @@
 # History
 
+## 1.0.2
+
+* write empty arrays in json list files instead of nothing, needed since 17w18b
+
 ## 1.0.1
 
 * use 'close' instead of 'exit' event for quitServer : might cause less problems
