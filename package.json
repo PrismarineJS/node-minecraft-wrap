@@ -29,6 +29,7 @@
     "md5-file": "^2.0.3",
     "mkdirp": "~0.3.4",
     "mz": "^2.6.0",
+    "promise-queue": "^2.2.3",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "rimraf": "~2.1.1"
