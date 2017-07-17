@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec",
-    "downloadMinecraft": "./examples/exampleDownload.js"
+    "downloadMinecraft": "./examples/exampleDownload.js",
+    "runMinecraft":"./examples/exampleWrapClient.js"
   },
   "repository": {
     "type": "git",

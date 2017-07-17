@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const WrapClient=require("../").WrapClient;
 const path = require('path');
 
