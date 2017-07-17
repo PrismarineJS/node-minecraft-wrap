@@ -26,13 +26,17 @@
     "batch": "^0.3.2",
     "debug": "^2.6.8",
     "es6-promisify": "^5.0.0",
+    "extract-zip": "^1.6.5",
+    "flatmap": "0.0.3",
     "md5-file": "^2.0.3",
+    "minecraft-folder-path": "^1.0.7",
     "mkdirp": "~0.3.4",
     "mz": "^2.6.0",
     "promise-queue": "^2.2.3",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
-    "rimraf": "~2.1.1"
+    "rimraf": "~2.1.1",
+    "yggdrasil": "rom1504/node-yggdrasil#request_user_option"
   },
   "devDependencies": {
     "mocha": "~2.2.1"

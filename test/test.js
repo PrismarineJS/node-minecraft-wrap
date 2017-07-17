@@ -1,17 +1,17 @@
-var Wrap=require("../").Wrap;
-var path = require('path');
-var MC_SERVER_PATH = path.join(__dirname, 'server');
+const  WrapServer=require("../").WrapServer;
+const  path = require('path');
+const  MC_SERVER_PATH = path.join(__dirname, 'server');
 
 describe("server_session", function() {
   this.timeout(10 * 60 * 1000);
   it("start and stop the server",function(done){
-    var vServer=new Wrap(process.env.MC_SERVER_JAR,MC_SERVER_PATH);
+    const  vServer=new WrapServer(process.env.MC_SERVER_JAR,MC_SERVER_PATH);
 
     vServer.on('line',function(line){
       console.log(line);
     });
 
-    vServer.startServer({},
+    vServer.startServer({"server-port":25569},
       function(err){
       if(err) {
         console.log(err);

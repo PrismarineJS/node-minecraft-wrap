@@ -20,7 +20,7 @@ npm install -g minecraft-wrap
 downloadMinecraft 1.8.8 1.8.8.jar server
 ```
 
-See [exampleDownload.js](examples/exampleDownload.js) and [exampleWrap.js](examples/exampleWrap.js)
+See [exampleDownload.js](examples/exampleDownload.js) and [exampleWrapServer.js](examples/exampleWrapServer.js)
 
 ### download(minecraftVersion,filename,done)
 

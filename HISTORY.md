@@ -39,7 +39,7 @@
 
 ## 0.6.1
 
-* check the created path is actually created in wrap.js
+* check the created path is actually created in wrap_server.js
 
 ## 0.6.0
 

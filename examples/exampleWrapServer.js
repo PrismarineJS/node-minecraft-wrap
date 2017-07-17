@@ -1,15 +1,15 @@
-var wrap=require("../");
-var path = require('path');
+const wrap=require("../");
+const path = require('path');
 
-if(process.argv.length !=4) {
-  console.log("Usage : node exampleWrap.js <jar_file> <server_dir>");
+if(process.argv.length !==4) {
+  console.log("Usage : node exampleWrapServer.js <jar_file> <server_dir>");
   process.exit(0);
 }
 
-var jarFile=path.isAbsolute(process.argv[2]) ? process.argv[2] :path.join(process.cwd(), process.argv[2]);
-var serverDir=path.isAbsolute(process.argv[3]) ? process.argv[3] : path.join(process.cwd(), process.argv[3]);
+const jarFile=path.isAbsolute(process.argv[2]) ? process.argv[2] :path.join(process.cwd(), process.argv[2]);
+const serverDir=path.isAbsolute(process.argv[3]) ? process.argv[3] : path.join(process.cwd(), process.argv[3]);
 
-var vServer=new wrap.Wrap(jarFile,serverDir);
+const vServer=new wrap.WrapServer(jarFile,serverDir);
 
 vServer.on('line',function(line){
   console.log(line);
