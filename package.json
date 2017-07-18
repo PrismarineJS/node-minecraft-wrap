@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rom1504/node-minecraft-wrap.git"
+    "url": "https://github.com/PrismarineJS/node-minecraft-wrap.git"
   },
   "keywords": [
     "minecraft",
@@ -21,7 +21,7 @@
   "author": "Romain Beaumont <romain.rom1@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rom1504/node-minecraft-wrap/issues"
+    "url": "https://github.com/PrismarineJS/node-minecraft-wrap/issues"
   },
   "dependencies": {
     "batch": "^0.3.2",
@@ -43,6 +43,7 @@
     "mocha": "~2.2.1"
   },
   "bin": {
-    "downloadMinecraft": "./examples/exampleDownload.js"
+    "downloadMinecraft": "./examples/exampleDownload.js",
+    "runMinecraft":"./examples/exampleWrapClient.js"
   }
 }
