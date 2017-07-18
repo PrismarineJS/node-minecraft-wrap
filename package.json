@@ -1,6 +1,6 @@
 {
   "name": "minecraft-wrap",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Download and wrap the vanilla minecraft server in node.js",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,6 @@
     "url": "https://github.com/PrismarineJS/node-minecraft-wrap/issues"
   },
   "dependencies": {
-    "batch": "^0.3.2",
     "debug": "^2.6.8",
     "es6-promisify": "^5.0.0",
     "extract-zip": "^1.6.5",

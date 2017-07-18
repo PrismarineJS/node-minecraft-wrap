@@ -1,5 +1,12 @@
 # History
 
+## 1.1.0
+
+* add launcher_download class that act like the launcher downloader
+* implement client wrap
+* add runMinecraft bin
+* add option to not override config files in wrap server
+
 ## 1.0.2
 
 * write empty arrays in json list files instead of nothing, needed since 17w18b
