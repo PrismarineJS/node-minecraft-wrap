@@ -1,5 +1,9 @@
 # History
 
+## 1.1.5
+
+* handle userProperties (necessary for 1.8) in wrap client
+
 ## 1.1.4
 
 * implement path based promise queue for downloading to avoid downloading 2 times the same path
