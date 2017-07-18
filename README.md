@@ -87,10 +87,10 @@ If these parameters are undefined, the selected user in the profile is used
 
 return a promise
 
-#### WrapClient.setAuthInfo(playerName,uuid,accessToken)
+#### WrapClient.setAuthInfo(playerName,uuid,accessToken,userProperties)
 
 set the authentication information directly without contacting the mojang servers.
-`playerName`, `uuid` and `accessToken` need to be provided.
+`playerName`, `uuid`, `accessToken` and `userProperties` need to be provided.
 
 #### WrapClient.start()
 
