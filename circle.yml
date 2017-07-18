@@ -2,9 +2,9 @@ machine:
   environment:
     MC_SERVER_JAR: /home/ubuntu/node-minecraft-wrap/minecraft-server/minecraft_server.jar
   node:
-    version: 4
+    version: 6
   java:
-    version: openjdk7
+    version: openjdk8
 test:
   override:
     - mkdir -p /home/ubuntu/node-minecraft-wrap/minecraft-server/
