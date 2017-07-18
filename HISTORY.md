@@ -1,5 +1,9 @@
 # History
 
+## 1.1.6
+
+* add params for mc <=1.6
+
 ## 1.1.5
 
 * handle userProperties (necessary for 1.8) in wrap client
