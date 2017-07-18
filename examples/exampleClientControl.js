@@ -55,4 +55,6 @@ Promise.resolve()
   })
   .catch((err) => {
     console.log(err);
+    vClient.stop();
+    process.exit();
   });
