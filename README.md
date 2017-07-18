@@ -3,11 +3,11 @@
 [![NPM version](https://img.shields.io/npm/v/minecraft-wrap.svg)](http://npmjs.com/package/minecraft-wrap)
 [![Build Status](https://img.shields.io/circleci/project/rom1504/node-minecraft-wrap/master.svg)](https://circleci.com/gh/rom1504/node-minecraft-wrap)
 
-Download and wrap the vanilla minecraft server in node.js. Also download the minecraft client.
+Download and wrap the vanilla minecraft server and client in node.js.
 
 ## Install
 
-To install a downloadMinecraft command line program, run:
+To install a downloadMinecraft and a runMinecraft command line programs, run:
 
 ```
 npm install -g minecraft-wrap
@@ -21,7 +21,9 @@ downloadMinecraft 1.8.8 1.8.8.jar server
 runMinecraft [<minecraft dir>] [<version>] [<username>] [<password>] [<stop>]
 ```
 
-See [exampleDownload.js](examples/exampleDownload.js) and [exampleWrapServer.js](examples/exampleWrapServer.js)
+See [examples](examples)
+
+## API
 
 ### download(minecraftVersion,filename,done)
 
@@ -34,7 +36,7 @@ It checks with a md5 hash that the file downloaded is correct and it
  
 download the vanilla client of version `minecraftVersion` jar file at `filename`.
 
-### new Wrap(MC_SERVER_JAR,MC_SERVER_PATH[,OPTIONS])
+### new WrapServer(MC_SERVER_JAR,MC_SERVER_PATH[,OPTIONS])
 
 initialize a wrapper with jar `MC_SERVER_JAR`, store mc server file at `MC_SERVER_PATH`
 
@@ -44,25 +46,108 @@ initialize a wrapper with jar `MC_SERVER_JAR`, store mc server file at `MC_SERVE
 * maxMem : the maximum memory allocated to the minecraft server, default to 512
 * doneRegex : the regex to check for the server message announcing the server has started, default to `new RegExp(/\[Server thread\/INFO\]: Done/)`
 
-#### Wrap.startServer(propOverrides, done)
+#### WrapServer.startServer(propOverrides, done)
 
 start the minecraft server with properties overrides `propOverrides`. Calls `done` when the server is started.
 
-#### Wrap.stopServer(done)
+#### WrapServer.stopServer(done)
 
 stop the minecraft server, calls `done` when the server is stopped.
 
-#### Wrap.deleteServerData(done)
+#### WrapServer.deleteServerData(done)
 
 delete the minecraft server data.
 
-#### Wrap.writeServer(line)
+#### WrapServer.writeServer(line)
 
 write `line` to the server.
 
 #### "line" (line)
 
 the Wrap instance emit that event when the server write a line
+
+### new WrapClient(clientPath,version)
+
+create a client wrapper instance
+
+* using `clientPath` as minecraft directory (or the default os specific path if undefined)
+* with minecraft version `version` (or the version of the selected profile if undefined)
+
+#### WrapClient.prepare()
+
+prepare all the files requires for the minecraft client in the minecraft directory.
+
+return a promise
+
+#### WrapClient.auth(username,password)
+
+authenticate the user using `username` and `password`.
+If these parameters are undefined, the selected user in the profile is used
+
+return a promise
+
+#### WrapClient.setAuthInfo(playerName,uuid,accessToken)
+
+set the authentication information directly without contacting the mojang servers.
+`playerName`, `uuid` and `accessToken` need to be provided.
+
+#### WrapClient.start()
+
+start the client
+
+return a promise that is resolved when the client is properly started
+
+#### WrapClient.stop()
+
+stop the client
+
+return a promise that is resolved when the client is stopped
+
+### new LauncherDownload(mcPath,os="linux")
+
+create a launcher downloader with `mcPath` as minecraft directory path
+
+#### LauncherDownload.getWholeClient(version)
+
+get the client jar, the assets, the libraries and extract the native libraries for the version `version`.
+return an object of arrays of the paths of the downloaded files
+
+#### LauncherDownload.getVersionsList()
+
+get and return a promise of the version list
+
+#### LauncherDownload.getVersionInfos(version)
+
+get and save the version infos and return a promise of it
+
+#### LauncherDownload.getAssetIndex(version)
+
+get and save the asset index and return a promise of it
+
+#### LauncherDownload.getAllAssets(version)
+
+get all the assets, save them and return a promise of an array of the paths
+
+#### LauncherDownload.getAsset(assetFile,version)
+
+get the asset `assetFile`, save it and return a promise of its path
+
+#### LauncherDownload.getClient(version)
+
+get the client jar, save it and return return a promise of its path
+
+#### LauncherDownload.getServer(version)
+
+get the server jar, save it and return return a promise of its path
+
+#### LauncherDownload.extractNatives(version)
+
+extract the natives files and return a promise to the path of the dir
+
+#### LauncherDownload.getLibraries(version)
+
+get all the libraries, save them and return a promise of an array of the paths
+
 
 ## Testing
 
