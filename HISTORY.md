@@ -1,5 +1,9 @@
 # History
 
+## 1.1.1
+
+* fix wrap client arg processing
+
 ## 1.1.0
 
 * add launcher_download class that act like the launcher downloader
