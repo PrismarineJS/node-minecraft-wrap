@@ -1,5 +1,9 @@
 # History
 
+## 1.1.3
+
+* remove duplicate libs
+
 ## 1.1.2
 
 * fix some bugs for initial download of the client
