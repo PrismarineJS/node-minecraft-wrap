@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --reporter spec",
     "downloadMinecraft": "./examples/exampleDownload.js",
-    "runMinecraft":"./examples/exampleWrapClient.js"
+    "runMinecraft": "./examples/exampleWrapClient.js"
   },
   "repository": {
     "type": "git",
@@ -30,19 +30,19 @@
     "flatmap": "0.0.3",
     "md5-file": "^2.0.3",
     "minecraft-folder-path": "^1.0.7",
-    "mkdirp": "~0.3.4",
+    "mkdirp": "^0.5.1",
     "mz": "^2.6.0",
     "promise-queue": "^2.2.3",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
-    "rimraf": "~2.1.1",
+    "rimraf": "^2.6.1",
     "yggdrasil": "rom1504/node-yggdrasil#request_user_option"
   },
   "devDependencies": {
-    "mocha": "~2.2.1"
+    "mocha": "^3.4.2"
   },
   "bin": {
     "downloadMinecraft": "./examples/exampleDownload.js",
-    "runMinecraft":"./examples/exampleWrapClient.js"
+    "runMinecraft": "./examples/exampleWrapClient.js"
   }
 }
