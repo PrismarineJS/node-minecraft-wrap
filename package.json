@@ -1,6 +1,6 @@
 {
   "name": "minecraft-wrap",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Download and wrap the vanilla minecraft server in node.js",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "rimraf": "^2.6.1",
-    "yggdrasil": "rom1504/node-yggdrasil#request_user_option"
+    "yggdrasil": "zekesonxx/node-yggdrasil#master"
   },
   "devDependencies": {
     "mocha": "^3.4.2"

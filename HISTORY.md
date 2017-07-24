@@ -1,5 +1,9 @@
 # History
 
+## 1.1.8
+
+* fix yggdrasil dependency
+
 ## 1.1.7
 
 * bump dependencies
