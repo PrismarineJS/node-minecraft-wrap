@@ -26,19 +26,19 @@
     "url": "https://github.com/PrismarineJS/node-minecraft-wrap/issues"
   },
   "dependencies": {
-    "debug": "^2.6.8",
+    "debug": "^2.6.9",
     "es6-promisify": "^5.0.0",
-    "extract-zip": "^1.6.5",
+    "extract-zip": "^1.6.7",
     "flatmap": "0.0.3",
     "md5-file": "^2.0.3",
-    "minecraft-folder-path": "^1.0.7",
+    "minecraft-folder-path": "^1.1.0",
     "mkdirp": "^0.5.1",
-    "mz": "^2.6.0",
-    "promise-queue": "^2.2.3",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.1",
+    "mz": "^2.7.0",
+    "promise-queue": "^2.2.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
     "rimraf": "^2.6.1",
-    "yggdrasil": "zekesonxx/node-yggdrasil#master"
+    "yggdrasil": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "^3.4.2",

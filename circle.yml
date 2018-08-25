@@ -7,6 +7,4 @@ machine:
     version: openjdk8
 test:
   override:
-    - mkdir -p /home/ubuntu/node-minecraft-wrap/minecraft-server/
-    - npm run downloadMinecraft 1.8.3 $MC_SERVER_JAR
     - npm test

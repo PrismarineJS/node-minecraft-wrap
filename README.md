@@ -133,11 +133,11 @@ get all the assets, save them and return a promise of an array of the paths
 
 get the asset `assetFile`, save it and return a promise of its path
 
-#### LauncherDownload.getClient(version)
+#### LauncherDownload.getClient(version, [path])
 
 get the client jar, save it and return return a promise of its path
 
-#### LauncherDownload.getServer(version)
+#### LauncherDownload.getServer(version, [path])
 
 get the server jar, save it and return return a promise of its path
 
