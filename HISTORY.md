@@ -1,5 +1,10 @@
 # History
 
+## 1.2.0
+
+* standardjs
+* use new non-aws client and server download urls (thanks @lluiscab) : required >= mc 1.13
+
 ## 1.1.8
 
 * fix yggdrasil dependency
