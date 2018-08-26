@@ -1,5 +1,9 @@
 # History
 
+## 1.2.1
+
+* increase ram default in wrap server
+
 ## 1.2.0
 
 * standardjs
