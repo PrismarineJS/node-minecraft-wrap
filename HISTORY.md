@@ -1,5 +1,9 @@
 # History
 
+## 1.2.2
+
+* stop printing . to the console for wrap server
+
 ## 1.2.1
 
 * increase ram default in wrap server
