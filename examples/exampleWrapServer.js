@@ -43,3 +43,7 @@ vServer.startServer({
     })
   }, 3000)
 })
+
+process.on('exit', () => {
+  vServer.stopServer()
+})
