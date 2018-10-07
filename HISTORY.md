@@ -1,5 +1,9 @@
 # History
 
+## 1.2.3
+
+* run the server in detached mode to avoid closing it by accident when doing ctrl+c on the main script
+
 ## 1.2.2
 
 * stop printing . to the console for wrap server
