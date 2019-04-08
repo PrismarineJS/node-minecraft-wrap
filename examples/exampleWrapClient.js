@@ -11,7 +11,14 @@ if (process.argv.length < 0) {
 const version = process.argv[3]
 const dir = process.argv[2] ? path.isAbsolute(process.argv[2]) ? process.argv[2] : path.join(process.cwd(), process.argv[2]) : null
 
-const vClient = new WrapClient(dir, version)
+let os = 'linux'
+if (process.platform === 'win32') {
+  os = 'windows'
+} else if (process.platform === 'darwin') {
+  os = 'osx'
+}
+
+const vClient = new WrapClient(dir, version, os)
 const username = process.argv[4]
 const password = process.argv[5]
 const stop = process.argv[6]
