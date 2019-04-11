@@ -67,14 +67,20 @@ write `line` to the server.
 
 the Wrap instance emit that event when the server write a line
 
-### new WrapClient(clientPath,version,os[,maxMem])
+### new WrapClient(clientPath,version,os[,OPTIONS]])
 
 create a client wrapper instance
 
 * using `clientPath` as minecraft directory (or the default os specific path if undefined)
 * with minecraft version `version` (or the version of the selected profile if undefined)
 * using `os` to set operating system (or the default of the operating system if linux)
-* (ideal) using `maxMem` to set maximal ram (or the default of the maximal ram if 1024)
+
+`OPTIONS` is an object containing the following optional properties:
+
+* using `maxMem` to set maximal ram (or the default of the maximal ram if 1024)
+* using `customMinecraftArguments` to replace the arguments for start the client (helpful for forge mod loader)
+* using `customMainClass` to replace the mainClass for start the client (helpful for forge mod loader)
+* using `customLibraries` to replace the libraries for start the client (helpful for custom minecraft and forge mod loader)
 
 #### WrapClient.prepare()
 
@@ -93,14 +99,6 @@ return a promise
 
 set the authentication information directly without contacting the mojang servers.
 `playerName`, `uuid`, `accessToken` and `userProperties` need to be provided.
-
-#### WrapClient.setCustom(minecraftArguments,mainClass[,libraries]) 
-
-modify the client wrapper instance
-
-* using `minecraftArguments` to replace the arguments for start the client (helpful for forge mod loader)
-* using `mainClass` to replace the mainClass for start the client (helpful for forge mod loader)
-* (ideal) using `libraries` to replace the libraries for start the client (helpful for custom minecraft and forge mod loader)
 
 #### WrapClient.start()
 
