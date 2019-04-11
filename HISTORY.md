@@ -1,11 +1,5 @@
 # History
 
-## 1.2.4
-
-* fix WrapClient for Windows
-* modify WrapClient for set operating system and set max ram
-* add WrapClient.setCustom for replace minecraft arguments, main class and libraries
-
 ## 1.2.3
 
 * run the server in detached mode to avoid closing it by accident when doing ctrl+c on the main script
