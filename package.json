@@ -8,7 +8,9 @@
     "pretest": "npm run lint",
     "lint": "standard",
     "downloadMinecraft": "./examples/exampleDownload.js",
-    "runMinecraft": "./examples/exampleWrapClient.js"
+    "runMinecraft": "./examples/exampleWrapClient.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -38,7 +40,8 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "rimraf": "^2.6.1",
-    "yggdrasil": "^1.1.1"
+    "yggdrasil": "^1.1.1",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "mocha": "^3.4.2",
@@ -47,5 +50,6 @@
   "bin": {
     "downloadMinecraft": "./examples/exampleDownload.js",
     "runMinecraft": "./examples/exampleWrapClient.js"
-  }
+  },
+  "snyk": true
 }
