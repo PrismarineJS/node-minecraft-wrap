@@ -41,7 +41,7 @@
     "yggdrasil": "^1.1.1"
   },
   "devDependencies": {
-    "mocha": "^3.4.2",
+    "mocha": "^7.1.2",
     "standard": "^11.0.1"
   },
   "bin": {
