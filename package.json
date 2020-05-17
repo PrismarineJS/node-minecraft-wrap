@@ -28,7 +28,7 @@
   "dependencies": {
     "debug": "^2.6.9",
     "es6-promisify": "^5.0.0",
-    "extract-zip": "^1.6.7",
+    "extract-zip": "^2.0.0",
     "flatmap": "0.0.3",
     "md5-file": "^2.0.3",
     "minecraft-folder-path": "^1.1.0",
