@@ -32,7 +32,7 @@
     "flatmap": "0.0.3",
     "md5-file": "^2.0.3",
     "minecraft-folder-path": "^1.1.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.4",
     "mz": "^2.7.0",
     "promise-queue": "^2.2.5",
     "request": "^2.88.0",
