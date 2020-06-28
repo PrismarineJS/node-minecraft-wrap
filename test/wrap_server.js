@@ -27,7 +27,7 @@ describe('server_session', function () {
       console.log(line)
     })
 
-    vServer.startServer({'server-port': 25569},
+    vServer.startServer({ 'server-port': 25569 },
       function (err) {
         if (err) {
           console.log(err)
