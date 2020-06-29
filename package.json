@@ -31,7 +31,7 @@
     "es6-promisify": "^5.0.0",
     "extract-zip": "^2.0.0",
     "flatmap": "0.0.3",
-    "md5-file": "^2.0.3",
+    "md5-file": "^4.0.0",
     "minecraft-folder-path": "^1.1.0",
     "mkdirp": "^0.5.1",
     "mz": "^2.7.0",
