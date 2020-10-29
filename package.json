@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "mocha": "^8.0.1",
-    "standard": "^15.0.0"
+    "standard": "^16.0.0"
   },
   "bin": {
     "downloadMinecraft": "./examples/exampleDownload.js",
