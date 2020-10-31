@@ -1,5 +1,10 @@
 # History
 
+## 1.3.0
+
+* update dependencies
+* make the server depend on its parent process (thanks @imharvol)
+
 ## 1.2.3
 
 * run the server in detached mode to avoid closing it by accident when doing ctrl+c on the main script
