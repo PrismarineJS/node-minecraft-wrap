@@ -1,7 +1,7 @@
 # Minecraft Wrap
 
 [![NPM version](https://img.shields.io/npm/v/minecraft-wrap.svg)](http://npmjs.com/package/minecraft-wrap)
-[![Build Status](https://img.shields.io/circleci/project/github/PrismarineJS/node-minecraft-wrap/master.svg)](https://circleci.com/gh/PrismarineJS/node-minecraft-wrap)
+[![Build Status](https://github.com/PrismarineJS/node-minecraft-wrap/workflows/CI/badge.svg)](https://github.com/PrismarineJS/node-minecraft-wrap/actions?query=workflow%3A%22CI%22)
 
 Download and wrap the vanilla minecraft server and client in node.js.
 
