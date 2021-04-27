@@ -5,5 +5,6 @@ module.exports = {
   download: require('./lib/download').downloadServer,
   downloadServer: require('./lib/download').downloadServer,
   downloadClient: require('./lib/download').downloadClient,
+  downloadBedrockServer: require('./lib/bedrock_download').downloadServer,
   LauncherDownload: require('./lib/launcher_download')
 }
