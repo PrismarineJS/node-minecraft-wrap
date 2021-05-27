@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "debug": "^4.1.1",
-    "es6-promisify": "^5.0.0",
+    "es6-promisify": "^7.0.0",
     "extract-zip": "^2.0.0",
     "flatmap": "0.0.3",
     "md5-file": "^4.0.0",
