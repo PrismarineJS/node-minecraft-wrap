@@ -46,6 +46,7 @@ initialize a wrapper with jar `MC_SERVER_JAR`, store mc server file at `MC_SERVE
 * maxMem : the maximum memory allocated to the minecraft server, default to 512
 * doneRegex : the regex to check for the server message announcing the server has started, default to `new RegExp(/\[Server thread\/INFO\]: Done/)`
 * noOverride : don't override config files
+* javaPath : specify path to a java executable to use, by default it's just `java`
 
 #### WrapServer.startServer(propOverrides, done)
 
