@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const WrapClient = require('../').WrapClient
+const WrapClient = require('minecraft-wrap').WrapClient
 const path = require('path')
 
 if (process.argv.length < 0) {

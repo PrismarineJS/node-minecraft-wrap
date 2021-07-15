@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const LauncherDownload = require('../').LauncherDownload
+const LauncherDownload = require('minecraft-wrap').LauncherDownload
 const path = require('path')
 if (!(process.argv.length >= 4 && process.argv.length <= 5)) {
   console.log('Usage : node exampleLauncherDownload.js <version> <minecraft dir> [<linux|osx|windows>]')

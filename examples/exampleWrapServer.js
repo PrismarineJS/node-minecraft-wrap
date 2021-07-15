@@ -1,4 +1,4 @@
-const wrap = require('../')
+const wrap = require('minecraft-wrap')
 const path = require('path')
 
 if (process.argv.length !== 4) {

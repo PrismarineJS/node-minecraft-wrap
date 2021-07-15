@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const wrap = require('../')
+const wrap = require('minecraft-wrap')
 const path = require('path')
 if (process.argv.length < 4 || process.argv.length > 5) {
   console.log('Usage : node exampleDownload.js <version> <jar_file> [<client|server>]')
