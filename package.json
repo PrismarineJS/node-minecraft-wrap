@@ -35,7 +35,7 @@
     "minecraft-folder-path": "^1.1.0",
     "mkdirp": "^0.5.1",
     "mz": "^2.7.0",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.0.0",
     "promise-queue": "^2.2.5",
     "rimraf": "^3.0.2",
     "yggdrasil": "^1.1.1"
