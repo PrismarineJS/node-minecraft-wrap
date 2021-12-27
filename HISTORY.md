@@ -1,5 +1,11 @@
 # History
 
+## 1.4.0
+* Throw on too old java version
+* Don't use broken native transport (Thanks @nickelpro)
+* Allow explicitly picking a java executable
+* Use node-fetch instead of request
+
 ## 1.3.0
 
 * update dependencies
