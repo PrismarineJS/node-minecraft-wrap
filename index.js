@@ -5,5 +5,7 @@ module.exports = {
   download: require('./lib/download').downloadServer,
   downloadServer: require('./lib/download').downloadServer,
   downloadClient: require('./lib/download').downloadClient,
-  LauncherDownload: require('./lib/launcher_download')
+  LauncherDownload: require('./lib/launcher_download'),
+  startServer: require('./lib/startServer').startServer,
+  collectPackets: require('./lib/startServer').collectPackets
 }

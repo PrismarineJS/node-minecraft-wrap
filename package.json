@@ -41,7 +41,9 @@
     "yggdrasil": "^1.1.1"
   },
   "devDependencies": {
-    "mocha": "^9.0.0",
+    "mocha": "^9.2.0",
+    "minecraft-protocol": "^1.30.0",
+    "minecraft-wrap": "file:.",
     "standard": "^16.0.1"
   },
   "bin": {
