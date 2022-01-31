@@ -8,7 +8,7 @@ if (!version) {
   process.exit(1)
 }
 
-const opt = { 'online-mode': Boolean(online), path: path ? path : undefined }
+const opt = { 'online-mode': Boolean(online), path: path || undefined }
 
 startServer(version, port || 25565, opt).then(p => {
   process.stdin.pipe(p.mcServer.stdin)
