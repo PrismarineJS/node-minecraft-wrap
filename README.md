@@ -19,6 +19,7 @@ npm install -g minecraft-wrap
 ```
 downloadMinecraft 1.8.8 1.8.8.jar server
 runMinecraft [<minecraft dir>] [<version>] [<username>] [<password>] [<stop>]
+startServer <version> [port] [online] [path]
 ```
 
 See [examples](examples)
