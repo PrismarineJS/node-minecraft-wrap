@@ -151,6 +151,10 @@ extract the natives files and return a promise to the path of the dir
 get all the libraries, save them and return a promise of an array of the paths
 
 
+#### startServer(version, port = 25565, serverProperties): Promise
+
+Async wrapper for starting a server
+
 ## Testing
 
 The MC_SERVER_JAR environment variable must be defined and point the .jar location before calling npm test.
