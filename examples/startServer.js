@@ -3,22 +3,13 @@ const { startServer } = require('../')
 
 const [,, version, port, online, path] = process.argv
 
-console.log(process.argv)
-
 if (!version) {
   console.error('startServer <version> [port] [online] [path]')
   process.exit(1)
 }
 
-const opt = {
-  version,
-  port: parseInt(port, 10) || 25565,
-  online,
-  path
-}
+const opt = { 'online-mode': Boolean(online), path: path ? path : undefined }
 
-console.log(opt)
-
-startServer(opt.version, port, { 'online-mode': Boolean(opt.online), path: opt.path ? opt.path : undefined }).then(p => {
+startServer(version, port || 25565, opt).then(p => {
   process.stdin.pipe(p.mcServer.stdin)
 })
