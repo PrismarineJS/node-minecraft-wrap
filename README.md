@@ -25,16 +25,20 @@ See [examples](examples)
 
 ## API
 
-### download(minecraftVersion,filename,done)
+### download(minecraftVersion,filename)
 
 download the vanilla server of version `minecraftVersion` jar file at `filename`.
+
+Returns a promise that resolves when the download is finished or rejects if there is an error.
 
 It checks with a md5 hash that the file downloaded is correct and it
  doesn't download it if the destination file is already the correct file.
  
-### downloadClient(minecraftVersion,filename,done)
+### downloadClient(minecraftVersion,filename)
  
 download the vanilla client of version `minecraftVersion` jar file at `filename`.
+
+Returns a promise that resolves when the download is finished or rejects if there is an error.
 
 ### new WrapServer(MC_SERVER_JAR,MC_SERVER_PATH[,OPTIONS])
 
@@ -48,17 +52,21 @@ initialize a wrapper with jar `MC_SERVER_JAR`, store mc server file at `MC_SERVE
 * noOverride : don't override config files
 * javaPath : specify path to a java executable to use, by default it's just `java`
 
-#### WrapServer.startServer(propOverrides, done)
+#### WrapServer.startServer(propOverrides)
 
-start the minecraft server with properties overrides `propOverrides`. Calls `done` when the server is started.
+start the minecraft server with properties overrides `propOverrides`.
 
-#### WrapServer.stopServer(done)
+Returns a promise that resolves once the server has started and is ready to be joined.
 
-stop the minecraft server, calls `done` when the server is stopped.
+#### WrapServer.stopServer()
 
-#### WrapServer.deleteServerData(done)
+stop the minecraft server, returns a promise that resolves once the server has been stopped.
+
+#### WrapServer.deleteServerData()
 
 delete the minecraft server data.
+
+Returns a promise
 
 #### WrapServer.writeServer(line)
 
