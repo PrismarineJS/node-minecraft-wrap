@@ -5,7 +5,6 @@ const downloadServer = require('../').downloadServer
 const path = require('path')
 const MC_SERVER_PATH = path.join(__dirname, 'server')
 const MC_SERVER_JAR = path.join(__dirname, 'server.jar')
-const fs = require('fs')
 const testedVersions = require('./tested_versions.json')
 
 for (const version of testedVersions) {
@@ -16,10 +15,6 @@ for (const version of testedVersions) {
         if (err) return done(err)
         done()
       })
-    })
-    after((done) => {
-      fs.unlinkSync(MC_SERVER_JAR)
-      done()
     })
 
     it('start and stop the server', function (done) {
