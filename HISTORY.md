@@ -1,6 +1,12 @@
 # History
 
+# 1.5.0
+
+* Fix etag not md5 on all downloads (@u9g)
+* Kill process when shutdown takes too long (@IceTank)
+
 ## 1.4.0
+
 * Throw on too old java version
 * Don't use broken native transport (Thanks @nickelpro)
 * Allow explicitly picking a java executable
