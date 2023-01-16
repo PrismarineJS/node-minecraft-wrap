@@ -37,7 +37,7 @@
     "mz": "^2.7.0",
     "node-fetch": "^2.6.1",
     "promise-queue": "^2.2.5",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.0.7",
     "yggdrasil": "^1.1.1"
   },
   "devDependencies": {
