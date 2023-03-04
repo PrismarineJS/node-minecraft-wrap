@@ -9,7 +9,8 @@
     "lint": "standard",
     "fix": "standard --fix",
     "downloadMinecraft": "./examples/exampleDownload.js",
-    "runMinecraft": "./examples/exampleWrapClient.js"
+    "runMinecraft": "./examples/exampleWrapClient.js",
+    "downloadBedrockServer": "./examples/exampleBedrockDownload.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "url": "https://github.com/PrismarineJS/node-minecraft-wrap/issues"
   },
   "dependencies": {
+    "adm-zip": "^0.5.5",
     "debug": "^4.1.1",
     "es6-promisify": "^5.0.0",
     "extract-zip": "^2.0.0",

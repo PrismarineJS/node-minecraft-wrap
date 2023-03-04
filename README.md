@@ -36,6 +36,15 @@ It checks with a md5 hash that the file downloaded is correct and it
  
 download the vanilla client of version `minecraftVersion` jar file at `filename`.
 
+### downloadBedrockServer(os, version, outputPath, suffixVersion)
+
+os: 'win' | 'linux'
+version: valid bedrock version (ie: '1.16.220')
+outputPath: name of folder to extract server to
+suffixVersion: the name of the outputFolder will be suffixed to the end of the folder name, ie: `output` to `output1.16.220`
+
+download + unzip the bedrock server
+
 ### new WrapServer(MC_SERVER_JAR,MC_SERVER_PATH[,OPTIONS])
 
 initialize a wrapper with jar `MC_SERVER_JAR`, store mc server file at `MC_SERVER_PATH`
