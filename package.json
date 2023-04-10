@@ -35,7 +35,7 @@
     "flatmap": "0.0.3",
     "md5-file": "^4.0.0",
     "minecraft-folder-path": "^1.1.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^3.0.0",
     "mz": "^2.7.0",
     "node-fetch": "^2.6.1",
     "promise-queue": "^2.2.5",
