@@ -1,5 +1,12 @@
 # History
 
+## 1.6.0
+* [node 22 (#97)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/9edf01617d4d4e8bf7339f8a5f4649d52de96e9a) (thanks @rom1504)
+* [Bump mocha from 10.8.2 to 11.0.1 (#96)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/d3beda18d3f5d1840fb880a8f69a830ca19d72ff) (thanks @dependabot[bot])
+* [Add command gh workflow allowing to use release command in comments (#93)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/39941e7e4db5fac4427083ed57288fb05591cb56) (thanks @rom1504)
+* [Update to node 18.0.0 (#92)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/3e6ab62135c0ff468d394355ca6b906257eae388) (thanks @rom1504)
+* [Add bedrock server download support (#51)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/9fb26ca0ed0a51005607bf55d8ee271557429b97) (thanks @u9g)
+
 ## 1.5.1
 
 * Fix publish.yml
