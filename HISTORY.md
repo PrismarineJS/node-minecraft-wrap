@@ -1,5 +1,10 @@
 # History
 
+## 1.7.0
+* [Update CI to Node 24 (#101)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/82c80a2a3320251ba6b2e9ad7c0f6d83f08dad88) (thanks @rom1504)
+* [Fix publish condition for npm-publish v4 (#100)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/6abef345d47240020b6a23c8a503ddf20f732413) (thanks @rom1504)
+* [Switch to trusted publishing via OIDC (#99)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/1ebae34932fdab951e7c6f126a702eea6337bd8b) (thanks @rom1504)
+
 ## 1.6.0
 * [node 22 (#97)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/9edf01617d4d4e8bf7339f8a5f4649d52de96e9a) (thanks @rom1504)
 * [Bump mocha from 10.8.2 to 11.0.1 (#96)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/d3beda18d3f5d1840fb880a8f69a830ca19d72ff) (thanks @dependabot[bot])
