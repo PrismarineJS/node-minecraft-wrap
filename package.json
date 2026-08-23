@@ -50,9 +50,5 @@
     "downloadMinecraft": "./examples/exampleDownload.js",
     "runMinecraft": "./examples/exampleWrapClient.js"
   },
-  "types": "index.d.ts",
-  "files": [
-    "index.d.ts",
-    "lib"
-  ]
+  "types": "index.d.ts"
 }
