@@ -1,5 +1,8 @@
 # History
 
+## 1.9.0
+* [Include lib/ in the npm package (#108)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/ec79612a5ed371e130806a58ad29a6d1b4056b11) (thanks @u9g)
+
 ## 1.8.0
 * [Make downloads and server startup settle instead of hanging forever (#106)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/c78281a3bdbb745cd2f041dc88d8702598e6adce) (thanks @u9g)
 * [Add TypeScript type definitions (#105)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/202bbc4a121f65e9c7666e82a8fd2ddcc7f885d8) (thanks @u9g)
