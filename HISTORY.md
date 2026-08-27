@@ -1,5 +1,8 @@
 # History
 
+## 1.10.0
+* [Keep the version manifest in memory and make file downloads atomic (#111)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/5ad11963b9cd12db0e2c9e23acd623b18a850f2a) (thanks @u9g)
+
 ## 1.9.0
 * [Include lib/ in the npm package (#108)](https://github.com/PrismarineJS/node-minecraft-wrap/commit/ec79612a5ed371e130806a58ad29a6d1b4056b11) (thanks @u9g)
 
